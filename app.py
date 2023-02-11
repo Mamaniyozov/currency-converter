@@ -24,7 +24,11 @@ def to_usd():
                 "convertedCurrency": "USD"
             }
     """
-    pass
+    r=request.args
+    sum=1138070
+    s=sum/usd
+    return {"Dollarda" : s }
+    
 
 @app.route('/api/to-uzs', methods=['GET'])
 def to_uzs():
@@ -46,7 +50,10 @@ def to_uzs():
                 "convertedCurrency": "UZS"
             }
     """
-    pass
+    z=request.args
+    dolr= 88.7
+    v=dolr*usd
+    return {"summda":v}
     
 
 if __name__ == '__main__':
